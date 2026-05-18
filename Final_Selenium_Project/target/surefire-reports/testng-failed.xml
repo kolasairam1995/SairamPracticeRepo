@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="TestClasses.LoginTest">
+        <methods>
+          <include name="loginapp"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- TestClasses.LoginTest -->
+      <class name="TestClasses.CreateNewAppointmentTest">
+        <methods>
+          <include name="book" invocation-numbers="0 1"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- TestClasses.CreateNewAppointmentTest -->
+      <class name="TestClasses.LogoutTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- TestClasses.LogoutTest -->
+      <class name="TestClasses.BookedAppointmentTest">
+        <methods>
+          <include name="bookConsult" invocation-numbers="0 1"/>
+          <include name="launchBrowser"/>
+          <include name="validateBooking"/>
+        </methods>
+      </class> <!-- TestClasses.BookedAppointmentTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
